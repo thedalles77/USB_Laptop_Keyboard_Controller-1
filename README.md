@@ -5,12 +5,12 @@ https://www.instructables.com/id/How-to-Make-a-USB-Laptop-Keyboard-Controller/
 1. Load the "Matrix_Decoder_LC, _3p2, or 4p0" Arduino code into your Teensy. 
 2. Load the Keyboard_with_number_pad or Keyboard_without_number_pad text file into an editor like Notepad++. 
 3. Put the cursor to the right of the first key in the list.
-4. Edit the txt file if it's missing any of your keyboards keys. The key codes must be from https://www.pjrc.com/teensy/td_keyboard.html  
+4. Edit the text file if it's missing any of your keyboards keys. The key codes must be from https://www.pjrc.com/teensy/td_keyboard.html  
 5. Connect your keyboard FPC cable to the FPC connector.
 6. Hook up the USB cable from your computer to the Teensy.
 7. Wait about 20 seconds, then push each key listed in the text file. You should see pin number pairs as you push a key.
 8. If a listed key is not on your keyboard, use your computer mouse or arrow keys to jump down to the next line.
-9. if you want to assign an FN-key (a keyevent which will only be triggered if the FN-key is also pressed), add "FN" between the keyname and the pins. Make sure that there is whitespace between the values.
+9. if you want to assign an FN-key (a key event which will only be triggered if the FN-key is also pressed), add "FN" between the keyname and the pins. Make sure that there is whitespace between the values.
 7. Save the finished key list text file.
 8. Make sure the key list text file is in the same folder as the matrixgenerator.py program, then execute the .py program.
 9. The program will create a text file that gives the following:
