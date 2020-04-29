@@ -10,12 +10,12 @@ https://www.instructables.com/id/How-to-Make-a-USB-Laptop-Keyboard-Controller/
 6. Hook up the USB cable from your computer to the Teensy.
 7. Wait about 20 seconds, then push each key listed in the text file. You should see pin number pairs as you push a key.
 8. If a listed key is not on your keyboard, use your computer mouse or arrow keys to jump down to the next line.
-9. if you want to assign an FN-key (a key event which will only be triggered if the FN-key is also pressed), add "FN" between the keyname and the pins. Make sure that there is whitespace between the values.
+9. if you want to assign Media keys (a key event associated with the FN-key), push the media key (do not push the FN key). Add "FN" between the media keyname and the pins. Make sure that there is whitespace between the values. 
 7. Save the finished key list text file.
 8. Make sure the key list text file is in the same folder as the matrixgenerator.py program, then execute the .py program.
 9. The program will create a text file that gives the following:
-    - The FPC connector pins that are inputs and the pins that are outputs
-    - These pins are translated to the Teensy I/O's that are inputs and outputs. Add these I/O numbers to your USB keyboard code.
+    - The FPC connector pins that are inputs (columns) and the pins that are outputs (rows) in the key matrix.
+    - The pins are translated to Teensy I/O numbers so you can add them to your USB keyboard code.
     - Unfortunately the Python program puts single quotes around every item in the Normal, Modifier, and Media arrays.
     - Use an editor to remove all single quotes, then copy these 3 arrays to your USB keyboard code.
 The detailed instructions for modifying the USB keyboard code can be found here: https://github.com/thedalles77/USB_Laptop_Keyboard_Controller/blob/master/Example_Keyboards/Instructions%20for%20modifying%20the%20Teensyduino%20LC%20code.pdf
