@@ -1,5 +1,5 @@
 # USB_Laptop_Keyboard_Controller
-https://www.instructables.com/id/How-to-Make-a-USB-Laptop-Keyboard-Controller/
+This was forked from Marcel's repo so that I could add support for the Teensy 3.2 and 4.0. I don't know how to modify the program to eliminate the single quotes around every key code. If anyone can help with this, let me know at thedalles77@gmail.com
 
 
 1. Load the "Matrix_Decoder_LC, _3p2, or 4p0" Arduino code into your Teensy. 
