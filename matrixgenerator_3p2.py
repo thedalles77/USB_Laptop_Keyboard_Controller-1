@@ -170,7 +170,7 @@ for keytype in Keytype:
                 if (((key.pin1==inputpin) |(key.pin2==inputpin))&((key.pin1==outputpin) | (key.pin2==outputpin))):
                     if key.type==keytype:
                         keylabel=key.label
-            keyrow=keyrow+"'"+keylabel+"',"
+            keyrow=keyrow+keylabel+","
         matrix=matrix+"{"+keyrow[:-1]+"},\n"
     matrix=matrix[:-1]+"\n}"
     print(matrix)
