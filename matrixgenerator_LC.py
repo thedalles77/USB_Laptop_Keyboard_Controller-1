@@ -152,7 +152,7 @@ print("\n"+str(len(inputpins))+" inputpins:")
 print(list(map(lambda x: con_pin[x-1], inputpins)))
 print("\n"+str(len(outputpins))+" outputpins:")
 print(list(map(lambda x: con_pin[x-1], outputpins)))
-print(seperator+"\nUse an editor to remove all single quotes and then copy these matrices into the Arduino USB Controller code\n")
+print(seperator+"\nCopy these matrices into the Arduino USB Controller code\n")
 # create the different matrices for every keytype
 for keytype in Keytype:
     matrix=seperator+"\n"+keytype.name+"\n"+seperator+"\n{\n"
