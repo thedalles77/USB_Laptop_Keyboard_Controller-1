@@ -1,6 +1,6 @@
 """
     Copyright 2019 Marcel Hillesheim
-    
+
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
@@ -63,7 +63,7 @@ class Key:
             if(modifiervalue==keytype.name):
                 self.type=keytype
 keys=[]
-    
+
 con_pin=[23, 0, 22, 1, 21, 2, 20, 3, 19, 4, 18, 5, 17, 6, 24, 7, 25, 8, 33, 9, 26, 10, 27, 11, 28, 12, 32, 31, 30, 29, 16, 15, 14, 13]
 #resultlist for inputpins
 inputpins=[]
@@ -175,21 +175,3 @@ for keytype in Keytype:
     matrix=matrix[:-1]+"\n}"
     print(matrix)
 input(seperator+"\nFinished")
-
-        
-            
-            
-
-    
-        
-
-    
-        
-        
-
-
-
-    
-    
-    
-
