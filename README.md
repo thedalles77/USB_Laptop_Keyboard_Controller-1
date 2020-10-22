@@ -11,7 +11,7 @@ This was forked from Marcel's repo so that I could add support for the Teensy 3.
 8. If a listed key is not on your keyboard, use your computer mouse or arrow keys to jump down to the next line.
 9. if you want to assign Media keys (a key event associated with the FN-key), push the media key (do not push the FN key). Add "FN" between the media keyname and the pins. Make sure that there is whitespace between the values.
 7. Save the finished key list text file.
-8. Make sure the key list text file is in the same folder as the matrixgenerator.py program, then execute the .py program.
+8. Make sure the key list text file is in the same folder as the matrixgenerator.py program, then execute the .py Python 3 program.
 9. The program will create a text file that gives the following:
     - The FPC connector pins that are inputs (columns) and the pins that are outputs (rows) in the key matrix.
     - The pins are translated to Teensy I/O numbers so you can add them to your USB keyboard code.
