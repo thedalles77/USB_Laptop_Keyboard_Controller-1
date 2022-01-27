@@ -1,5 +1,5 @@
-# USB_Laptop_Keyboard_Controller
-For suggestions and comments, contact me at [thedalles77@gmail.com](thedalles77@gmail.com).
+# This was forked from Marcel Hillesheim's USB_Laptop_Keyboard_Controller repo. No changes have been made.
+For suggestions and comments, contact Frank Adams at [thedalles77@gmail.com](thedalles77@gmail.com).
 
 1. Load the "Matrix_Decoder_LC, _3p2, or 4p0" Arduino code into your Teensy.
 2. Load the Keyboard_with_number_pad or Keyboard_without_number_pad text file into an editor like Notepad++.
