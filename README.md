@@ -16,4 +16,4 @@ For suggestions and comments, contact Frank Adams at [thedalles77@gmail.com](the
     - The FPC connector pins that are inputs (columns) and the pins that are outputs (rows) in the key matrix.
     - The pins are translated to Teensy I/O numbers so you can add them to your USB keyboard code.
     - Copy these 3 arrays to your USB keyboard code.
-The detailed instructions for modifying the USB keyboard code can be [found here](https://github.com/thedalles77/USB_Laptop_Keyboard_Controller/blob/master/Example_Keyboards/Instructions%20for%20modifying%20the%20Teensyduino%20LC%20code.pdf).
+The detailed instructions for modifying the USB keyboard code can be [found here](https://github.com/thedalles77/USB_Laptop_Keyboard_Controller/blob/master/Example_Keyboards/Instructions%20for%20modifying%20the%20Teensyduino%204.0%20and%204.1%20code.pdf).
