@@ -19,7 +19,7 @@ import os
 """
 
 """
-author: Marcel Hillesheim with modifications by Frank Adams
+author: Marcel Hillesheim with modifications by Frank Adams to add Teensy 4.1
 
 input:
 txt file in same folder with the fpc pins pair of the key in the order of the array keys
@@ -46,8 +46,11 @@ con_pin_v3_2 = [23, 0, 22, 1, 21, 2, 20, 3, 19, 4, 18, 5, 17, 6, 24, 7, 25, 8, 3
 # 4.0
 con_pin_v4 = [23, 0, 22, 1, 21, 2, 20, 3, 19, 4, 18, 5, 17, 6, 29, 7, 31, 8, 33, 9, 32, 10, 30, 11, 28, 12, 27, 26,
               25, 24, 16, 15, 14, 13]
+# 4.1
+con_pin_v4_1 = [23, 0, 22, 1, 21, 2, 20, 3, 19, 4, 18, 5, 17, 6, 16, 7, 15, 8, 14, 9, 10, 11, 12, 24, 25, 26, 27, 28, 
+              29, 30, 31, 32, 33, 41]
 
-teensy_devices = [('LC', con_pin_lc), ('3.2', con_pin_v3_2), ('4.0', con_pin_v4)]
+teensy_devices = [('LC', con_pin_lc), ('3.2', con_pin_v3_2), ('4.0', con_pin_v4), ('4.1', con_pin_v4_1)]
 
 separator = "-----------------------------------------------------\n"
 
@@ -145,13 +148,13 @@ def generate_matrix(path, con_pin):
     print(input_pins)
     print("\n" + str(len(output_pins)) + " output pins:")
     print(output_pins)
-    print(separator + "TEENSY PINS (these have to be copied to the arduino file):")
+    print(separator + "TEENSY PINS (these have to be copied to the Teensy code):")
     # translate FPC pins to TEENSY pins using the con_pin array
     print("\n" + str(len(input_pins)) + " input pins:")
     print(list(map(lambda x: con_pin[x - 1], input_pins)))
     print("\n" + str(len(output_pins)) + " output pins:")
     print(list(map(lambda x: con_pin[x - 1], output_pins)))
-    print(separator + "Copy these matrices into the Arduino USB Controller code\n")
+    print(separator + "Copy these matrices into the teensy USB Controller code\n")
     # create the different matrices for every key type
     for key_type in KeyType:
         matrix = separator + key_type.name + "\n" + separator + "{\n"
