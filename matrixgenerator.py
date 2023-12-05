@@ -19,7 +19,7 @@ import os
 """
 
 """
-author: Marcel Hillesheim with modifications by Frank Adams to add Teensy 4.1
+author: Marcel Hillesheim with modifications by Frank Adams to add Teensy 4.1 & 2.0++
 
 input:
 txt file in same folder with the fpc pins pair of the key in the order of the array keys
@@ -49,8 +49,10 @@ con_pin_v4 = [23, 0, 22, 1, 21, 2, 20, 3, 19, 4, 18, 5, 17, 6, 29, 7, 31, 8, 33,
 # 4.1
 con_pin_v4_1 = [23, 0, 22, 1, 21, 2, 20, 3, 19, 4, 18, 5, 17, 6, 16, 7, 15, 8, 14, 9, 10, 11, 12, 24, 25, 26, 27, 28, 
               29, 30, 31, 32, 33, 41]
-
-teensy_devices = [('LC', con_pin_lc), ('3.2', con_pin_v3_2), ('4.0', con_pin_v4), ('4.1', con_pin_v4_1)]
+# 2.0++
+con_pin_v2_pp = [27, 26, 0, 25, 1, 24, 2, 23, 3, 22, 4, 21, 5, 20, 28, 19, 7, 18, 8, 9, 38, 10, 39, 11, 40, 12, 41, 13, 
+              42, 14, 43, 15, 44, 16, 45, 17]
+teensy_devices = [('LC', con_pin_lc), ('3.2', con_pin_v3_2), ('4.0', con_pin_v4), ('4.1', con_pin_v4_1), ('2.0++', con_pin_v2_pp)]
 
 separator = "-----------------------------------------------------\n"
 
