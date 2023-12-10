@@ -156,7 +156,7 @@ def generate_matrix(path, con_pin):
     print(list(map(lambda x: con_pin[x - 1], input_pins)))
     print("\n" + str(len(output_pins)) + " output pins:")
     print(list(map(lambda x: con_pin[x - 1], output_pins)))
-    print(separator + "Copy these matrices into the teensy USB Controller code\n")
+    print(separator + "Copy these matrices into the Teensy USB Controller code\n")
     # create the different matrices for every key type
     for key_type in KeyType:
         matrix = separator + key_type.name + "\n" + separator + "{\n"
