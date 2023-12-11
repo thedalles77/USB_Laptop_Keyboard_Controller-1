@@ -17,4 +17,4 @@
     - The FPC connector pins that are inputs (columns) and the pins that are outputs (rows) in the key matrix.
     - The pins are translated to Teensy I/O numbers so you can copy and paste them into your USB keyboard code.
     - Copy and paste the 3 arrays into your USB keyboard code.
-The detailed instructions for modifying the USB keyboard code can be [found here](https://github.com/thedalles77/USB_Laptop_Keyboard_Controller/blob/master/Example_Keyboards/Instructions%20for%20modifying%20the%20code.pdf).
+The detailed instructions for modifying the USB keyboard code can be [found here](https://github.com/thedalles77/USB_Laptop_Keyboard_Controller/blob/master/Example_Keyboards/Instructions%20for%20Marcels%20Code.pdf).
