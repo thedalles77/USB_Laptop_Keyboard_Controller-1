@@ -1,5 +1,6 @@
 # This was forked from Marcel Hillesheim's USB_Laptop_Keyboard_Controller repo and then the Teensy 4.1 and 2.0++ were added. Also a KMK folder was added with support for the Raspberry Pi Pico and Solder Party 2350 Stamp XL.
 
+Instructions for decoding a Teensy based keyboard controller:
 1. Load the "Matrix_Decoder_LC, _3p2, 4p0, 4p1, or 2.0++" code into your Teensy.
 2. Load the Keyboard_with_number_pad or Keyboard_without_number_pad text file into an editor like Notepad++.
 3. Put the cursor to the right of the first key in the list.
